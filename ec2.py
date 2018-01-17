@@ -99,9 +99,8 @@ tag             = args.tag
 
 # new aws obj
 #aws = ssm.Runshell(region = region)
-aws = ssm.Runshell(get_creds_sia('us-east-1'))
-
-# ternary op to get either env or deploy 
+aws = ssm.Runshell(get_creds_sia(region))
+ 
 (key, value) = tag.split(':')
 
 if parser_name == 'list':
