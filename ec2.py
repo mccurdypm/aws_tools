@@ -1,5 +1,7 @@
 #!/bin/env python
 
+# command line tool to run shell commands, list hosts via tags, etc
+
 from yahoo.contrib.mep.aws_helper import ssm
 from yahoo.contrib.mep.aws_splunk import athens
 from pprint import pprint
